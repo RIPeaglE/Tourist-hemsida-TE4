@@ -1,0 +1,85 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #375a7e;
+}
+
+.container{
+    display: flex;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px;
+    border-radius: 25px;
+    padding: 20px; 
+    width: 800px;
+    height: 700px;  
+}
+
+.title{
+    font-size: 30px;
+    color: white;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #1b3249;
+    color: white;
+    font-size: 30px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sumbit{
+    width: 100%;
+    background-color: #1b3249;
+    color: white;
+    font-size: 30px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.homediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 30%;
+    background-color: #1b3249;
+    color: white;
+    font-size: 30px;
+    padding: 16px;
+    border-radius: 4px;
+}
+

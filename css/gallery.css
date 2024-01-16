@@ -1,0 +1,79 @@
+@import url(../fonts/orewa/OREWA-PersonalUse.otf);
+
+@font-face {
+    font-family: "japanfonttext";
+    src: url(../fonts/orewa/OREWA-PersonalUse.otf);
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 62.5%;
+  background-color: #375a7e;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #375a7e;
+    text-align: center;
+    font-family: "japanfonttext";
+
+}
+
+li {
+    display: inline;
+    text-decoration: none;
+}
+
+li a {
+    color: white;
+    padding: 14px 30px;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #1b3249;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 250px;
+  grid-auto-flow: dense;
+  align-items: stretch;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.wide {
+  grid-column: span 1;
+}
+
+.tall {
+  grid-row: span 2;
+}

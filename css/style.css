@@ -1,0 +1,242 @@
+@import url(../fonts/orewa/OREWA-PersonalUse.otf);
+
+@font-face {
+    font-family: "japanfonttext";
+    src: url(../fonts/orewa/OREWA-PersonalUse.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.08fr 1fr 0.6fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar"
+      "japanlogo"
+      "pickboxes"
+      "gallerybox";
+    height: 100vh;
+    width: auto;
+    background-color: #375a7e;
+}
+  
+.navbar { 
+    grid-area: navbar; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo{
+    display: flex;
+    width: 150px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #375a7e;
+    text-align: center;
+    font-family: "japanfonttext";
+
+}
+
+li {
+    display: inline;
+    text-decoration: none;
+}
+
+li a {
+    color: white;
+    padding: 14px 30px;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #1b3249;
+}
+
+  
+.japanlogo { 
+    grid-area: japanlogo; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/japanintro.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: 50% 50%;
+}
+
+.japantext {
+    color: white;
+    text-align: center;
+    font-size: 180px;
+    font-family: "japanfonttext";
+}
+  
+.pickboxes { 
+    grid-area: pickboxes; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 60px;
+
+}
+
+.flex{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1b3249;
+}
+
+a{
+    text-decoration: none;
+}
+
+a div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.summer{
+    display: flex;
+    background-image: url('../img/japansummer.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+    border-radius: 25px;
+    color: white !important;
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+
+.summer:hover{
+    -webkit-filter: brightness(100%);
+    text-decoration: underline;
+}
+
+.summer p{
+    color: white !important;
+}
+
+.fall p{
+    color: white !important;
+}
+
+.spring{
+    display: flex;
+    background-image: url('../img/Japanspring.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+    border-radius: 25px;
+    -webkit-filter: brightness(80%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    color: black;
+
+}
+
+.spring:hover{
+    -webkit-filter: brightness(100%);
+    text-decoration: underline;
+    color: black;
+}
+
+
+.winter{
+    display: flex;
+    background-image: url('../img/japanwinter.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+    border-radius: 25px;
+    -webkit-filter: brightness(80%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    color: black;
+
+}
+
+.winter:hover{
+    -webkit-filter: brightness(100%);
+    text-decoration: underline;
+    color: black;
+
+
+}
+
+
+.fall{
+    display: flex;
+    background-image: url('../img/Japanfall.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+    border-radius: 25px;
+    color: white !important;
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+
+}
+
+.fall:hover{
+    -webkit-filter: brightness(100%);
+    text-decoration: underline;
+
+}
+
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: "japanfonttext";
+    color: black;
+    
+}
+
+  

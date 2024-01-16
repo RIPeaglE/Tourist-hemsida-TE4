@@ -1,0 +1,221 @@
+@import url(../fonts/orewa/OREWA-PersonalUse.otf);
+
+@font-face {
+    font-family: "japanfonttext";
+    src: url(../fonts/orewa/OREWA-PersonalUse.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Navbar"
+      "city1"
+      "city2"
+      "city3"
+      "city4"
+      "city5";
+    height: 2400px;
+    background-color: #375a7e;
+}
+  
+.navbar { 
+    grid-area: Navbar; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #375a7e;
+    text-align: center;
+    font-family: "japanfonttext";
+
+}
+
+li {
+    display: inline;
+    text-decoration: none;
+}
+
+li a {
+    color: white;
+    padding: 14px 30px;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #1b3249;
+    text-decoration: underline;
+
+}
+  
+.city1 { 
+    grid-area: city1;
+    background-color: #1b3249; 
+    display: flex;
+    width: auto;
+    margin: 10px;
+
+}
+
+.city1-item:nth-child(1) {
+    display: block;
+    flex-grow: 3;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+  
+.city1-item:nth-child(2) {
+    display: block;
+    flex-grow: 12;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+
+
+.city2 { 
+    grid-area: city2; 
+    background-color: #1b3249; 
+    display: flex;
+    margin: 10px;
+}
+ 
+.city2-item:nth-child(1) {
+    display: block;
+    flex-grow: 3;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+  
+
+  
+.city2-item:nth-child(2) {
+    display: block;
+    flex-grow: 12;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.city3 { 
+    grid-area: city3; 
+    background-color: #1b3249; 
+    display: flex;
+    margin: 10px;
+}
+
+.city3-item:nth-child(2) {
+    display: block;
+    flex-grow: 12;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.city3-item:nth-child(1) {
+    display: block;
+    flex-grow: 3;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+  
+.city4 { 
+    grid-area: city4; 
+    background-color: #1b3249; 
+    display: flex;
+    margin: 10px;
+}
+
+.city4-item:nth-child(1) {
+    display: block;
+    flex-grow: 3;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+  
+.city4-item:nth-child(2) {
+    display: block;
+    flex-grow: 12;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+  
+.city5 { 
+    grid-area: city5; 
+    background-color: #1b3249; 
+    display: flex;
+    margin: 10px;
+}
+  
+.city5-item:nth-child(1) {
+    display: block;
+    flex-grow: 3;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.city5-item:nth-child(2) {
+    display: block;
+    flex-grow: 12;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.logo{
+    width: 600px;
+    padding: 20px;
+}
+
+p.title{
+    color: white;
+    font-size: 60px;
+    display: flex;
+}
+
+p.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: white;
+    font-size: 20px;
+}
+
+.book{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+
